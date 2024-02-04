@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cat Contest Registration</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles.css"/>  
+    </head>
+    <body>
+        <h1 id="title">Cat Contest Registration</h1>
+        <p id="description">Please fill out this form.</p>
+        <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+            <fieldset>
+                <label class="pet-label" id="name-label" for="name">Cat's name:<input required class="pet-input" id="name" type="text" placeholder="Luna"> 
+                </label>
+                <label class="pet-label" id="number-label" for="number">Cat's age:<input required class="pet-input" id="number" type="number" min="0" max="30" placeholder="2">
+                </label>
+                <label class="pet-label" >Breed:<select required class="pet-input" id="dropdown">
+                    <option>Domestic</option>
+                    <option>Siamese</option>
+                    <option>Abyssinian</option>
+                    <option>Ragdoll</option>
+                    <option>British shorthair</option>
+                    <option>Persian</option>
+                    <option>Bengal</option>
+                    <option>Sphynx</option>
+                    <option>Other</option>
+                </select>
+                </label>
+                <p class="legend">Select cat's gender:</p>
+                    <label class="radio" for="female">Female
+                        <input value="female" id="female" name="gender" type="radio" checked>
+                    </label>
+                    <label class="radio" for="male">Male
+                        <input value="male" type="radio" id="male" name="gender">
+                    </label>
+                <p class="legend">What are your cat's best qualities?</p>    
+                    <label class="checkbox" for="smart">Smart
+                        <input value="smart" id="smart" name="qualities" type="checkbox">
+                    </label>
+                    <label class="checkbox" for="funny">Funny
+                        <input value="funny" id="funny" name="qualities" type="checkbox">
+                    </label>
+                    <label class="checkbox" for="affectionate">Affectionate
+                        <input value="affectionate" id="affectionate" name="qualities" type="checkbox">
+                    </label>
+                    <label class="checkbox" for="playful">Playful
+                        <input value="playful" id="playful" name="qualities" type="checkbox">
+                    </label>
+                    <label class="checkbox" for="curious">Curious
+                        <input value="curious" id="curious" name="qualities" type="checkbox">
+                    </label>
+            </fieldset>
+            <fieldset>
+                <label class="owner-label" id="owner-label" for="owner">Your name:<input id="owner" type="name" placeholder="Owner's name"></label>
+                <label class="owner-label" id="email-label" for="email">Email address:
+                    <input required id="email" type="email" placeholder="lunasowner@email.com">
+                </label>
+                <label class="owner-label" for="comments">Why should your cat win the contest?
+                    <textarea id="comments" placeholder="She is the cutest cat in the world."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>  
+    </body>
+</html>

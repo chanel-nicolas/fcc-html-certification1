@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana;
+    background-color: rgb(58, 45, 70);
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid whitesmoke;
+    width: 500px;
+    margin: 20px auto;
+}
+
+textarea {
+    min-height: 50px;
+    width: 75%;
+}
+
+.checkbox {
+    display: inline;
+    margin: 0 10px;
+}
+
+.radio {
+    display: inline;
+}
+
+.pet-label, .owner-label {
+    display: block;
+    padding: 5px 0;
+}
+
+p {
+    margin-top: 25px;
+}
